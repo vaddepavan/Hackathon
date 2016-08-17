@@ -1,0 +1,18 @@
+<html>
+
+	<head>
+      <title> emergency</title>
+	  <style>
+     body {
+       background-image: url("emergency.jpg"); 
+	   background-size: 100% 100%;
+       background-repeat: no-repeat;
+     } 
+   </style>
+	</head>
+	<body>
+		<h1 align="center" style="color:red">SMS SENT</h1>
+		<h2 align="center"style="color:blue">DONT WORRY! YOUR ARE IN THE SAFE HANDS...</h2>
+		<h2 align="center" style="color:red">AMBULANCE IS ON THE WAY</h2>
+	</body>
+</html>

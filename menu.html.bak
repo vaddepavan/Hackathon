@@ -1,0 +1,27 @@
+<html>
+	<body bgcolor="#819FF7">
+		<table align="center">
+			<tr>
+			   <form action="profile.html" target="display">
+			      <input type="submit" value="profile" style="height:25px; width:120px"></form>
+			</tr>
+			<tr>
+			   <form action="healthstatus.html" target="display">
+			      <input type="submit" value="health status" style="height:25px; width:120px"></form>
+			</tr>
+			<tr>
+			   <form action="preferences.html" target="display">
+			      <input type="submit" value="preferences" style="height:25px; width:120px"></form>
+			</tr>
+			<tr>
+			   <form action="suggestions.html" target="display">
+			      <input type="submit" value="suggestions" style="height:25px; width:120px"></form>
+			</tr>
+			<tr>
+			   <form action="nearby.html" target="display">
+			      <input type="submit" value="nearby hospitals" style="height:25px; width:120px"></form>
+			</tr>
+
+		</table>
+	</body>
+<html>

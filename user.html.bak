@@ -1,0 +1,11 @@
+ <html>
+
+   <head>
+     <title>personal information</title>
+   </head>
+   
+   <frameset rows="120,*">
+	  <frame src="header.html" scrolling="no" noresize>
+	  <frame src="details.html">
+   </frameset>
+</html>

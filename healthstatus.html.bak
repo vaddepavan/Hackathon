@@ -1,0 +1,169 @@
+<html>
+
+    <head>
+		<script>
+			
+			function check(){
+		       var pattern1 = /^[0-9]{1,3}$/;
+				var pattern2 = /^[0-9]{2,3}$/;
+				var pattern3 = /^[1-9]{3}$/;
+				var pattern4 = /^[1-9]{1,2}$/;
+				var pattern5 = /^[1-9]{3}$/;
+				var pattern6 = /^[1-9]{2,3}$/;
+				var height=document.form1.t1.value;
+				var weight=document.form1.t2.value;
+				var high  =document.form1.t3.value;
+				var low  =document.form1.t4.value;
+				var sugar = document.form1.t5.value;
+				var pulse  =document.form1.t6.value;
+				
+				if(!(height.search(pattern1)==-1)&&!(weight.search(pattern2)==-1) &&!(high.search(pattern3)==-1) &&!(low.search(pattern4)==-1) &&!(sugar.search(pattern4)==-1) &&!(pulse.search(pattern5)==-1)){
+				   alert("your health status is updated");	   
+						
+
+		}
+		else{
+			if((height.search(pattern1)==-1))
+			  alert("please enter your height in number");
+			if((weight.search(pattern2)==-1))
+			  alert("please enter your weight in number");
+			if((high.search(pattern3)==-1))
+			  alert("please enter your BP-Diastolic in number");
+			if((low.search(pattern4)==-1))
+			  alert("please enter your BP-Systolic in number");
+			if((sugar.search(pattern5)==-1))
+			  alert("please enter your sugar level in number");
+			if((pulse.search(pattern6)==-1))
+			  alert("please enter your pulse rate in number");
+
+			return false;
+				
+			}
+		}
+		</script>
+		<style>
+     body {
+       background-image: url("health.jpg"); 
+	   background-size: 100% 100%;
+       background-repeat: no-repeat;
+     } 
+   </style>
+	</head>
+	<body>
+	  <form name="form1" onsubmit="return check()">
+	    <h3 align="center"> HEALTH STATUS </h3>
+		<table align="center">
+		 <tr>
+		   <td style="color:white">
+			 Height<b style="color:red">*</b>
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+			  <input type="text" name="t1" placeholder="enter your height in cm"> 
+		   </td>
+		 </tr>
+
+		 <tr>
+		   <td style="color:white" >
+			 <font size="4">weight</font><b style="color:red">*</b>
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+			  <input type="text" name="t2" placeholder="enter your weight in kg"> 
+		   </td>
+		 </tr>
+
+		 <tr>
+		   <td style="color:white">
+			 BP-Diastolic<b style="color:red">*</b>
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+			  <input type="text" name="t3" placeholder="enter your BP if it is Diastolic"> 
+		   </td>
+		 </tr>
+
+		 <tr>
+		   <td style="color:white">
+			 BP-Systolic<b style="color:red">*</b>
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+			  <input type="text" name="t4" placeholder="enter your  BP if it is systolic"> 
+		   </td>
+		 </tr>
+
+		 <tr>
+		   <td style="color:white">
+			 Blood sugar level<b style="color:red">*</b>
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+			  <input type="text" name="t5" placeholder="enter your blood sugar level"> 
+		   </td>
+		 </tr>
+
+		 <tr>
+		   <td style="color:white">
+			 Pulse rate<b style="color:red">*</b>
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+		   &nbsp
+		   </td>
+		   <td>
+			  <input type="text" name="t6" placeholder="enter your pulse rate"> 
+		   </td>
+		   <tr>
+		     <td> &nbsp;</td>
+			 <td> &nbsp</td>
+			 <td> &nbsp</td>
+			 <td> &nbsp</td>
+		  
+		 </tr>		 
+		 <tr align = "center">
+			<td   colspan="4">
+			      <input type="submit" value="save" onclick="check()" style="height:25px; width:120px"></td>
+		    <td>
+
+			</td>
+			<td>
+
+			</td>
+			<td>
+
+			</td> 
+		 </tr>
+		 </form>
+		
+		</table>
+
+	</body>
+</html>

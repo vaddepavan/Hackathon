@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<script>
+			function check(){
+				var pattern1 = /^\d{10}$/;
+				var pattern2 = /^\d{10}$/;
+				var m1 = document.form1.t1.value;
+				var m2 = document.form1.t2.value;
+
+				if(!(m1.search(pattern1))&&!(m2.search(pattern2)))
+				   alert("your prefrences are stored");
+				else{
+					if(m1.search(pattern1) == -1)
+					   alert("please enter a valid mobile no. in first preferenced number");
+					if(m2.search(pattern2) == -1)
+					   alert("please enter a valid mobile no. in second preferenced number");
+				}
+			}
+		</script>
+	</head>
+	<body>
+	    <h3 align="center">PREFERENCES</h3>
+		<form name="form1" >
+		<table  align="center" >
+			<tr>
+			  <td> mobile no.<b style="color:red">*</b></td>
+			  <td> &nbsp</td>
+			  <td> &nbsp</td>
+			  <td> <input name="t1" type="text" ></td>
+			</tr>
+			<tr>
+			  <td> alternate mobile no.<b style="color:red">*</b></td>
+			  <td> &nbsp</td>
+			  <td> &nbsp</td>
+			  <td> <input name="t2" type="text" ></td>
+			</tr>
+			<tr>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+			</tr>
+			<tr align="center">
+		      <td colspan="4"> 
+			      <input type="submit" onclick="check()" value="save" style="height:25px; width:120px"></td>
+			  <td> &nbsp</td>
+			  <td> &nbsp</td>
+			  <td> </td>
+			</tr>
+		  </form>
+		</table>
+	</body>
+</html>
